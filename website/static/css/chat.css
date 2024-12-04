@@ -190,3 +190,26 @@ body {
 .container .messagebar {
   flex-shrink: 0; /* Prevent shrinking */
 }
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.btn:active {
+  background-color: #004085;
+  transform: scale(0.95); 
+}
