@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #33343f;
+  font-family: Arial, sans-serif;
+  display: flex;
+}
+
+.chat {
+  display: flex;
+  gap: 20px;
+  padding: 25px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.chat img {
+  width: 35px;
+  height: 35px;
+  border-radius: 5%;
+}
+
+.response {
+  background-color: #494b59;
+}
+
+.message-box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: calc(100vh - 60px); /* Adjust height considering the messagebar height */
+  overflow-y: auto;
+  position: relative; /* To position the default text absolutely */
+}
+
+.default-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 13px; /* Adjusted font size for better readability */
+  text-align: center;
+}
+
+/* Styling for the message bar at the bottom */
+.messagebar {
+  bottom: 0; /* Fixed positioning at the bottom */
+  padding: 10px;
+  height: fit-content;
+  background-color: #f1f1f1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* Sposta la barra di ricerca a destra */
+  background-color: #33343f;
+}
+
+.messagebar .bar-wrapper {
+  background-color: #494b59;
+  border-radius: 3px;
+  width: 70vw; /* Modifica la larghezza se necessario */
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bar-wrapper input {
+  width: 100%;
+  padding: 5px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  background: #494b59; /* Matches the background color */
+  color: #ccc; /* Light text color */
+}
+
+.bar-wrapper input::placeholder {
+  color: #ccc;
+}
+
+.messagebar button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.messagebar button:hover {
+  background-color: #555;
+}
+
+/* Styling for chat messages */
+.chat.message,
+.chat.response {
+  display: flex;
+  align-items: center;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: #333;
+  padding: 10px;
+  color: white;
+  width: 200px;
+  height: 100vh;
+  position: relative;
+}
+
+.navbar .section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.navbar .section h2 {
+  margin: 0;
+  padding: 5px 0;
+}
+
+.navbar .section button {
+  background-color: #555;
+  color: white;
+  border: none;
+  padding: 10px;
+  margin: 5px 0;
+  cursor: pointer;
+}
+
+.navbar .section button:hover {
+  background-color: #777;
+}
+
+.navbar .section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.navbar .section ul li {
+  padding: 5px 0;
+}
+
+.admin-section {
+  position: absolute;
+  bottom: 10px;
+  width: calc(100% - 20px);
+}
+
+.chatbox-wrapper {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Full height of the viewport */
+}
+
+.container h1 {
+  flex-shrink: 0; /* Prevent shrinking */
+}
+
+.container .conversation-section {
+  flex-grow: 1; /* Take up remaining space */
+  overflow-y: auto; /* Scroll if content overflows */
+}
+
+.container .messagebar {
+  flex-shrink: 0; /* Prevent shrinking */
+}
