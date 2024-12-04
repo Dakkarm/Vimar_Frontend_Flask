@@ -1,0 +1,56 @@
+/* Stile Globale */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #121212; /* Sfondo scuro */
+  color: #ffffff; /* Testo bianco */
+}
+
+/* Stile per il Titolo */
+h1 {
+  text-align: center;
+  margin: 20px 0;
+  color: #00bcd4; /* Colore blu tecnologico */
+}
+
+/* Layout Griglia */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Due colonne */
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Stile per le Card */
+.card {
+  background-color: #1e1e2f; /* Sfondo scuro delle card */
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.card h2 {
+  color: #00e676; /* Verde tecnologico */
+}
+
+.card p {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+/* Stile per i Canvas */
+canvas {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Limiti per il grafico a torta */
+#feedback-pie-chart {
+  max-width: 300px; /* Limite larghezza */
+  max-height: 300px; /* Limite altezza */
+  margin: 0 auto; /* Allineamento centrato */
+}

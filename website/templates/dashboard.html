@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="..\static\css\dashboard.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div id="dashboard">
+    <h1>Pannello di Controllo</h1>
+    <div class="grid-container">
+      <!-- Numero Totale delle Richieste -->
+      <div class="card">
+        <h2>Statistiche sulle Richieste</h2>
+        <p>Richieste Conversazione Libera: <span id="free-requests"></span></p>
+        <p>Richieste Conversazione Guidata: <span id="guided-requests"></span></p>
+        <p>Numero Totale delle Richieste: <span id="total-requests"></span></p>
+      </div>
+
+      <!-- Statistiche sulle Parole Chiave -->
+      <div class="card">
+        <h2>Statistiche sulle Parole Chiave</h2>
+        <canvas id="keyword-chart"></canvas>
+      </div>
+
+      <!-- Andamento Giornaliero -->
+      <div class="card">
+        <h2>Andamento Giornaliero</h2>
+        <canvas id="daily-trend-chart"></canvas>
+      </div>
+
+      <!-- Statistiche sul Feedback -->
+      <div class="card">
+        <h2>Statistiche sul Feedback</h2>
+        <p>Feedback Positivo: <span id="positive-feedback"></span></p>
+        <p>Feedback Negativo: <span id="negative-feedback"></span></p>
+        <canvas id="feedback-pie-chart"></canvas>
+      </div>
+    </div>
+  </div>
+  <script src="..\static\js\dashboard.js"></script>
+</body>
+</html>
